@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import './App.css'
+import Header from './components/Header/Header'
+import Blogs from './components/Blogs/Blogs'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-red-500 bg-green-500'>Vite + React</h1>
+    <Header></Header>
+    <Blogs></Blogs>
     </>
   )
 }

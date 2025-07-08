@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co/84NxP7X7/1.jpg",
+      "title": "Mastering JavaScript in 30 Days",
+      "author": "Alice Johnson",
+      "author_img": "https://i.ibb.co/847yPbTK/Ellipse-1.png",
+      "posted_date": "2025-07-01",
+      "reading_time": 8,
+      "hashtags": ["#JavaScript", "#Coding", "#WebDevelopment"]
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co/sM7RcZH/2.png",
+      "title": "A Beginner's Guide to React",
+      "author": "Mark Thompson",
+      "author_img": "https://i.ibb.co/d0WNqgFF/Ellipse-2.png",
+      "posted_date": "2025-06-25",
+      "reading_time": 6,
+      "hashtags": ["#React", "#Frontend", "#JSX"]
+    },
+    {
+      "id": 3,
+      "cover": "https://i.ibb.co/gLzJv0bJ/3.png",
+      "title": "10 Tips for Better UI Design",
+      "author": "Sofia Lee",
+      "author_img": "https://i.ibb.co/d4TmBstc/Ellipse-3.png",
+      "posted_date": "2025-06-18",
+      "reading_time": 5,
+      "hashtags": ["#Design", "#UIUX", "#Tips"]
+    },
+    {
+      "id": 4,
+      "cover": "https://i.ibb.co/rG0T1QTx/4.jpg",
+      "title": "Understanding Async/Await in JS",
+      "author": "David Kim",
+      "author_img": "https://i.ibb.co/d4TmBstc/Ellipse-3.png",
+      "posted_date": "2025-07-05",
+      "reading_time": 7,
+      "hashtags": ["#AsyncAwait", "#Promises", "#JavaScript"]
+    }
+  ]
+  
