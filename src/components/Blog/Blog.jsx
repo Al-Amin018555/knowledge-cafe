@@ -1,10 +1,10 @@
-
-const Blog = ({ blog }) => {
+import { PiBookmarkSimpleBold } from "react-icons/pi";
+const Blog = ({ blog,handleAddToBookMarks }) => {
     const { cover, title, author_img, author, posted_date, reading_time, hashtags } = blog;
     return (
         <div>
-            <img src={cover} alt="" />
-            <div className="mt-6 flex justify-between">
+            <img className="rounded-lg mt-4 w-full" src={cover} alt="" />
+            <div className="mt-6 flex justify-between mb-4">
                 <div className="flex">
                     <img src={author_img} alt={`cover image of title ${title}`}></img>
                     <div className="ml-6">
@@ -12,11 +12,16 @@ const Blog = ({ blog }) => {
                         <p className="font-semibold text-[rgba(17,17,17,0.6)]">{posted_date}</p>
                     </div>
                 </div>
-                <div>
-                    <p className="font-medium text-[20px] text-[rgba(17,17,17,0.6)]">{reading_time} min read</p>
+                
+                <div className="flex gap-2 items-center">
+                    <p className="font-medium text-[20px] text-[rgba(17,17,17,0.6)]">{reading_time} min read </p>
+                   <button onClick={handleAddToBookMarks} className="text-2xl text-red-400"> 
+                    <PiBookmarkSimpleBold />
+                   </button> 
+                    
                 </div>
             </div>
-            <h2 className="font-bold text-[40px]">{title}</h2>
+            <h2 className="mb-2 font-bold text-[40px]">{title}</h2>
             {
                 hashtags.map((hash,idx) => <span key={idx} className="mr-3 font-medium text-[20px] text-[rgba(17,17,17,0.6)]">{hash}</span>)
             }
