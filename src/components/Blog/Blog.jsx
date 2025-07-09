@@ -1,5 +1,7 @@
 import { PiBookmarkSimpleBold } from "react-icons/pi";
-const Blog = ({ blog,handleAddToBookMarks }) => {
+import "./Blog.css"
+
+const Blog = ({ blog, handleAddToBookMarks }) => {
     const { cover, title, author_img, author, posted_date, reading_time, hashtags } = blog;
     return (
         <div>
@@ -12,18 +14,18 @@ const Blog = ({ blog,handleAddToBookMarks }) => {
                         <p className="font-semibold text-[rgba(17,17,17,0.6)]">{posted_date}</p>
                     </div>
                 </div>
-                
+
                 <div className="flex gap-2 items-center">
                     <p className="font-medium text-[20px] text-[rgba(17,17,17,0.6)]">{reading_time} min read </p>
-                   <button onClick={handleAddToBookMarks} className="text-2xl text-red-400"> 
-                    <PiBookmarkSimpleBold />
-                   </button> 
-                    
+                    <button onClick={() => handleAddToBookMarks(blog)} className="cursor text-2xl text-red-400">
+                      <PiBookmarkSimpleBold></PiBookmarkSimpleBold>
+                    </button>
+
                 </div>
             </div>
             <h2 className="mb-2 font-bold text-[40px]">{title}</h2>
             {
-                hashtags.map((hash,idx) => <span key={idx} className="mr-3 font-medium text-[20px] text-[rgba(17,17,17,0.6)]">{hash}</span>)
+                hashtags.map((hash, idx) => <span key={idx} className="mr-3 font-medium text-[20px] text-[rgba(17,17,17,0.6)]">{hash}</span>)
             }
         </div>
     );

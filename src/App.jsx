@@ -8,7 +8,8 @@ function App() {
   const [bookmarks,setBookMarks] = useState([]);
   
   const handleAddToBookMarks = blog => {
-    console.log('book mark clicked');
+    const newBookMarks = [...bookmarks,blog];
+    setBookMarks(newBookMarks);
   }
 
   return (
@@ -16,7 +17,7 @@ function App() {
       <Header></Header>
       <div className='md:flex justify-between'>
         <Blogs handleAddToBookMarks={handleAddToBookMarks}></Blogs>
-        <Bookmarks></Bookmarks>
+        <Bookmarks bookmarks={bookmarks}></Bookmarks>
       </div>
 
     </div>
